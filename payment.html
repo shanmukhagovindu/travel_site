@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - [Your Company/Project Name]</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Include your CSS file for styling -->
+    <style>
+        /* Additional or modified styles for the Payment page */
+        .payment-form {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+
+        .payment-form label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .payment-form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .payment-form button {
+            background-color: #3498db;
+            color: #fff;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .payment-form button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Payment</h1>
+        <nav>
+            <!-- Include your navigation menu here -->
+        </nav>
+    </header>
+
+    <main>
+        <!-- Payment Form Section -->
+        <section class="payment-form">
+            <h2>Secure Payment</h2>
+            <form action="process_payment.php" method="post">
+                <label for="card-number">Card Number:</label>
+                <input type="text" id="card-number" name="card-number" placeholder="Enter your card number" required>
+
+                <label for="expiry-date">Expiry Date:</label>
+                <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required>
+
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" placeholder="Enter CVV" required>
+
+                <label for="card-holder">Card Holder Name:</label>
+                <input type="text" id="card-holder" name="card-holder" placeholder="Enter card holder's name" required>
+
+                <button type="submit">Submit Payment</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 [Your Company/Project Name]</p>
+    </footer>
+</body>
+</html>
